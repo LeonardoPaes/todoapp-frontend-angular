@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html, main {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #1a1a1a;
+    color: #808080;
+}
+
+body, input, select, textarea, button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px #4EA8DE;
+}

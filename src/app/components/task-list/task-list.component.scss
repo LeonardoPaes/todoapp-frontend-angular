@@ -1,0 +1,64 @@
+.wrapper {
+    margin-top: 4rem;
+
+    .wrapperWithoutTasks {
+        padding: 4rem 1.5rem;
+        border-top: 1px solid #333333;
+        text-align: center;
+    }
+
+    .warningWrapper {
+        text-align: center;
+    }
+    
+    .warningWrapper strong{
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            line-height: 1.6;
+            font-weight: 700;
+            font-size: 0.875rem;
+            align-items: flex-end;
+        }
+
+        strong {
+            font-size: 0.75rem;
+            color: white;
+            background: #333333;
+            border-radius: 9px;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            margin-left: 0.5rem;
+        }
+
+        .blue {
+            color: #4ea8de;
+        }
+
+        .purple {
+            color: #8284fa;
+        }
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    app-task {
+        width: 100%;
+    }
+}
+

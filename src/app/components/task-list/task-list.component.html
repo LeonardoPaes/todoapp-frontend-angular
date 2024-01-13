@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <header>
+        <div>
+            <span class="blue">Tarefas criadas</span>
+            <strong>{{tasks.length}}</strong>
+        </div>
+        <div>
+            <span class="purple">Concluídas</span>
+            <strong>{{getCheckedTasks()}} de {{tasks.length}}</strong>
+        </div>
+    </header>
+    <article [class.wrapperWithoutTasks]="tasks.length === 0">
+        <app-task *ngFor="let task of tasks" [task]="task" (removedTask)="handleRemoveTask($event)" (toggledTask)="handleToggleTask($event)"/>
+        <div [style.display]="tasks.length === 0 ? 'block' : 'none'">
+            <img src="../../../assets/clipboard-icon.svg" />
+            <div class="warningWrapper">
+                <strong>Você ainda não tem tarefas cadastradas</strong>
+                <span>Crie tarefas e organize seus itens a fazer</span>
+            </div>
+        </div>
+    </article>
+</div>

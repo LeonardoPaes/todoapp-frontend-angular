@@ -1,0 +1,10 @@
+<div [class.taskDone]="task.isChecked">
+    <label>
+        <input type="checkbox" name="isChecked" [value]="task.isChecked" (change)="handleToggleTask()" />
+        <i class="ph ph-check" [style.display]="task.isChecked ? 'block' : 'none'"></i>
+    </label>
+    <span>{{task.value}}</span>
+    <button (click)="handleRemoveTask()">
+        <i class="ph ph-trash"></i>
+    </button>
+</div>

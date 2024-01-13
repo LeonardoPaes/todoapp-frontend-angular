@@ -1,0 +1,33 @@
+form {
+    display: flex;
+    gap: .5rem;
+    margin-top: calc(0px - 1rem - 11px);
+}
+
+input {
+    background: #262626;
+    border: 1px solid #0d0d0d;
+    border-radius: 8px;
+    padding: 1rem;
+    color: white;
+
+    flex: 1;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    border: 0;
+    color: white;
+    background: #1e6f9f;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+
+    i {
+        font-size: 20px;
+    }
+}
